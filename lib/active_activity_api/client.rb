@@ -3,7 +3,6 @@ require 'httparty'
 module ActiveActivityApi
   class Client
     include HTTParty
-    include Active::DataCoercion
 
     BASE_URL = "http://api.amp.active.com/v2"
 
@@ -18,7 +17,6 @@ module ActiveActivityApi
         per_page: 100
       }
     end
-    # HEY!  Move on to RunReg.  Come back to this.
 
     def search **opts
       # Response in format
@@ -41,13 +39,7 @@ module ActiveActivityApi
         query: default_params.merge(params)
       )
       if response.code == 200
-        response = response.parsed_response
-
-        if (error = response['error'])
-          raise Error.new error['error_msg']
-        else
-          response
-        end
+        response.parsed_response
       else
         raise Error.new response.body
       end

@@ -3,7 +3,6 @@ if ENV['ENV'] == 'development'
   require 'byebug'
 end
 require 'active_activity_api/version'
-require 'active/data_coercion'
 require 'active/activity'
 require 'active_activity_api/client'
 
