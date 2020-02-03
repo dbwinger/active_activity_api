@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/dbwinger/active_activity_api'
   s.licenses      = ['MIT']
   s.summary       = 'Ruby wrapper for Active.com activity search v2 API'
-  s.description   = ''
+  s.description   = 'Ruby wrapper for Active.com activity search v2 API'
 
   s.files         = Dir.glob('{bin/*,lib/**/*,[A-Z]*}')
   s.platform      = Gem::Platform::RUBY
