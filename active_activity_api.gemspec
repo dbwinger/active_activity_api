@@ -7,11 +7,11 @@ Gem::Specification.new do |s|
   s.name          = 'active_activity_api'
   s.version       = ActiveActivityApi::VERSION
   s.authors       = ['dbwinger']
-  s.email         = ['dbwinger@entrision.com']
+  s.email         = ['daryl@entrision.com']
   s.homepage      = 'https://github.com/dbwinger/active_activity_api'
   s.licenses      = ['MIT']
-  s.summary       = '[summary]'
-  s.description   = '[description]'
+  s.summary       = 'Ruby wrapper for Active.com activity search v2 API'
+  s.description   = ''
 
   s.files         = Dir.glob('{bin/*,lib/**/*,[A-Z]*}')
   s.platform      = Gem::Platform::RUBY
