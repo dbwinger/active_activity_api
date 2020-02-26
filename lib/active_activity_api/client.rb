@@ -41,7 +41,7 @@ module ActiveActivityApi
       if response.code == 200
         response.parsed_response
       else
-        raise Error.new response.body
+        raise Error.new "#{response.code}: #{response.body}"
       end
     end
   end
